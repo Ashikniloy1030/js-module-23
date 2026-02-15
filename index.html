@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 23 js</title>
+</head>
+<body>
+
+  <!-- যত ভাবে অনক্লিক ব্যবহার করা যায় তা নিম্নে দেওয়া হলো -->
+
+  <!-- option 1 for click event handler -->
+<button id="btn-make-green" onclick="console.log(56)">Make green</button>
+<button id="btn-make-yellow">Make yellow</button>
+
+<!-- option 2 for click event handler -->
+ <!-- নিচের দুইটি বাটন বানানো হয়েছে, আলাদা করে ফাংশনের মধ্যে কাজ করে ব্যাকগ্রাউন্ড কালার পরিবর্তনকরা হয়েছে। ক্লিক করলে কাজ করবে। -->
+<button onclick="makeBlue()">Make light blue</button>
+<button onclick="darkBlue()">Meke Dark Blue</button>
+
+<!-- option 3: get Element by Id an  set onclick, এটা আলাদা ফাইলে করা হয়েছে js file e -->
+<button id="btn-make-gold">Meke gold</button>
+
+<!-- option 4: document.getElementById().addEventListener('even type', handler) -->
+<button id="btn-make-purple">Make Purple</button>
+<button id="btn-make-cyan">Make cyan</button>
+
+
+
+<script>
+  function makeBlue(){
+    document.body.style.backgroundColor = 'lightBlue'
+  }
+  function darkBlue(){
+    document.body.style.backgroundColor = 'blue'
+  }
+</script>
+
+
+
+  <script src="dom.js"></script>
+</body>
+</html>
