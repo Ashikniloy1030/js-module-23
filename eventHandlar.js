@@ -1,4 +1,5 @@
 // console.log('added event handler');
+// প্রথমে গেট ইলিমেন্ট দিয়ে বাটন খুজে পরে ফাংশন এর মধ্যে যে ট্যাগের টেক্সট চেঞ্জ করা হবে সেই ট্যাগকে গেট ইলিমেন্ট দিয়ে খুজে সেই ভ্যারিয়েবল এর নামে ইনার টেক্সট চেঞ্জ করা হয়েছে।
 
 // Event handler/ button e click korle uporer headline er text change kora 
 //practice-1
