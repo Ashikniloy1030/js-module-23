@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More events</title>
+</head>
+<body>
+<button id="btn-mouse">Mouse Pointer</button>
+
+<input type="text"id="user-name" placeholder="Your name">
+
+<input type="text"id="user-email" placeholder="Your E-mail">
+
+<script>
+
+  //মাউস যখন বাটনের উপর যাবে তখন কাউন্ট হবে। ক্লিক করা লাগবে না।
+// document.getElementById('btn-mouse')
+// .addEventListener('mouseenter',function(){
+//   console.log('Mouse Trigger');
+// })
+
+
+  //মাউস যখন বাটনের উপর যাবে move hobe tokhon move count korbe
+// document.getElementById('btn-mouse')
+// .addEventListener('mousemove',function(){
+//   console.log('Mouse Trigger');
+// })
+
+
+  //mouse out hole count hobe
+// document.getElementById('btn-mouse')
+// .addEventListener('mouseout',function(){
+//   console.log('Mouse Trigger');
+// })
+
+//যখন লিখার জন্য মাউস ক্লিক করে ফোকাস করা হবে তখনই কাউন্ট হবে
+// document.getElementById('user-name')
+// .addEventListener('focus', function(){
+//   console.log('user about  write to name');
+// })
+
+// document.getElementById('user-email')
+// .addEventListener('focus', function(){
+//   console.log('user about  write to E-mail');
+// })
+
+//blur: likha done hoye gele count hobe
+// document.getElementById('user-name')
+// .addEventListener('blur', function(){
+//   console.log('user done with name');
+// })
+
+// document.getElementById('user-email')
+// .addEventListener('blur', function(){
+//   console.log('user done with E-mail');
+// })
+
+//কি ডাউন দিলে ‍রিয়েল টাইম দেখায় না- মডিউল-23-6 : 8 মিনিট
+//  document.getElementById('user-name')
+// .addEventListener('keydown', function(event){
+// console.log('typing', event.target.value);
+// })
+
+//কি আপ দিলে রিয়েল টাইম টাইপিং শো করে।
+ document.getElementById('user-name')
+.addEventListener('keyup', function(event){
+console.log('typing', event.target.value);
+})
+
+
+
+
+</script>
+ 
+</body>
+</html>
