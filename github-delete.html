@@ -6,6 +6,28 @@
   <title>Github delete</title>
 </head>
 <body>
-  
+  <h1 id="secret-tag">My secret info</h1>
+  <input type="text" name="" id="input-delete" placeholder="Write delete">
+  <button id="btn-delete" disabled >Delete</button>
+
+
+  <script>
+    document.getElementById('input-delete')
+    .addEventListener('keyup',function(event){
+      const text = event.target.value;
+      // console.log('user is typing', text);
+      const btnDelete = document.getElementById('btn-delete');
+      if(text === 'delete'){
+        console.log('delete typed');
+        btnDelete.removeAttribute('disabled');
+        const secretTag = document.getElementById('secret-tag');
+        secretTag.style.display = 'none';
+      }
+      else{
+        console.log('something else');
+        btnDelete.setAttribute('disabled', true);
+      }
+    })
+  </script>
 </body>
 </html>
